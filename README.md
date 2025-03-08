@@ -1,16 +1,30 @@
 # Color-Blindness-Filter
-Color Blindness Filter - Prototype
+Color Blindness Filter - Final Prototype
 
-Overview: This is a prototype for a Chrome extension that helps color-blind users by applying real-time color adjustments to webpages. The extension provides a simple popup UI where users can choose from different filters designed for various types of color blindness.
+Overview:
+This is the final version of our Chrome extension that helps color-blind users by applying real-time color adjustments to webpages. The extension provides a simple popup UI where users can choose from different filters designed for various types of color blindness. Now, the filter persists across pages until the browser is closed, ensuring a seamless user experience.
 
-Current Status: This is an early-stage prototype and not yet optimized for full user customization. Currently supports basic CSS-based color adjustments on webpages. No user preferences are saved—filters reset when the page reloads. Not yet published on the Chrome Web Store.
+Current Status:
+The extension is now fully functional with real-time filtering. Filters persist across all webpages until Chrome is closed. The performance and usability have been optimized for a smoother experience. This version is ready for potential publishing on the Chrome Web Store.
 
-How It Works: The user selects a color blindness type from the popup menu. The extension modifies the colors on the current webpage. It uses CSS filters to enhance color contrast for better visibility. Supported Color Blindness Types Protanopia (Red-Blind) Deuteranopia (Green-Blind) Tritanopia (Blue-Blind) Achromatopsia (Total Color Blindness)
+How It Works:
+The user selects a color blindness type from the popup menu, and the extension modifies the colors on all webpages for better visibility. It uses CSS filters to enhance color contrast automatically, ensuring the filter remains active across all open webpages.
 
-Installation (For Testing Only): Download the project files to your computer. Open Google Chrome and go to chrome://extensions/. Enable Developer Mode using the toggle switch. Click Load Unpacked and select the project folder. The extension will now appear in the Chrome toolbar. How to Use Click the extension icon in the Chrome toolbar. Select a color blindness filter from the dropdown menu. Click Apply, and the colors on the webpage will adjust. To reset, refresh the page or select "None" in the filter menu.
+Supported Color Blindness Types:
+Protanopia (Red-Blind), Deuteranopia (Green-Blind), Tritanopia (Blue-Blind), and Achromatopsia (Total Color Blindness) are supported in this version.
 
-Project Structure: manifest.json – Chrome extension configuration. popup.html – UI for selecting color filters. popup.js – Handles user input. content.js – Applies color filters to the webpage. styles.css – Popup styling. icons/ – Stores icons for the extension.
+Installation (For Testing Only):
+To install, download the project files to your computer, open Google Chrome, and navigate to chrome://extensions/. Enable Developer Mode, click Load Unpacked, and select the project folder. Once installed, the extension will appear in the Chrome toolbar.
 
-Future Improvements: Save user preferences so the filter persists across pages. Add custom color adjustment sliders for more control. Optimize for better performance on dynamic websites. Explore AI-based adaptive filtering.
+How to Use:
+Click the Color Blindness Filter extension icon in the Chrome toolbar, select a filter from the dropdown menu, and click Apply. The selected filter will instantly adjust webpage colors and persist across all pages until Chrome is closed. To reset, select "None" in the filter menu.
 
-License: This project is a prototype and is open for improvements. Licensed under MIT License.
+Project Structure:
+The project consists of several core files: manifest.json for Chrome extension configuration, popup.html for the user interface, popup.js for handling user input and filter persistence, content.js for applying color filters to webpages, and background.js for ensuring filters are applied automatically. The styles.css file handles popup styling, and the icons/ folder contains extension icons.
+
+Future Improvements:
+Future updates may include saving user preferences beyond browser sessions, adding custom color adjustment sliders for more precise control, optimizing performance for dynamic websites, and exploring AI-based adaptive filtering to enhance visibility dynamically.
+
+License:
+This project is a final prototype and remains open for further improvements. It is licensed under the MIT License.
+
